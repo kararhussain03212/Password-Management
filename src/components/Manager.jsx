@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 const Manager = () => {
     const ref = useRef(null);
     const [form, setForm] = useState({site:"", username:"", password:""});
-    const [showPass, setShowPass] = useState(false);
+    // const [showPass, setShowPass] = useState(false);
     
     const showPassword = () => {
         setShowPass(!showPass);
@@ -16,7 +16,7 @@ const Manager = () => {
     }
     
     const savePassword = () => {
-        alert("Password Saved Successfully");
+        console.log(form);
     }
 
     const handleChange = (e) => {
@@ -57,11 +57,11 @@ const Manager = () => {
                         />
                         <div className="relative">
                             <input 
-                                value={form.password} 
+                                // value={form.password} 
                                 onChange={handleChange} 
                                 className='rounded-full bg-white border border-green-400 w-full p-4 py-1' 
                                 placeholder='Enter Password' 
-                                type={showPass ? "text" : "password"} 
+                                // type={showPass ? "text" : "password"} 
                                 name='password' 
                             />
                             <span className='absolute right-[5px] top-[5px]' onClick={showPassword}>
