@@ -109,7 +109,7 @@ const Manager = () => {
                 <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#8bca84,transparent)]"></div>
             </div>
 
-            <div className="p-2 mycontainer md:p-0 min-h-[84.8vh]">
+            <div className="p-2 mycontainer mt-10 md:p-0 min-h-[80.5vh]">
                 <h1 className='text-4xl font-bold text-center'>
                     <span className='text-4xl text-green-500'>&lt;</span>
                     Passop
