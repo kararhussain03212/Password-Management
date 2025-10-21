@@ -8,11 +8,17 @@ const Manager = () => {
     const [passwordArray, setPasswordArray] = useState([]);
     const [showPass, setShowPass] = useState(false);
 
+    const getPasswords = async() => {
+        let req = await fetch("http://localhost:3000/")
+        let passwords = await req.json();
+        console.log(passwords)
+        setPasswordArray(passwords)
+
+    }
+
     useEffect(() => {
-        let passwords = localStorage.getItem("passwords");
-        if (passwords) {
-            setPasswordArray(JSON.parse(passwords))
-        }
+        getPasswords()
+
     });
     const copyText = (text) => {
         toast('Copy to Clipboard', {
@@ -55,11 +61,11 @@ const Manager = () => {
                 theme: "light",
             });
         }
-        else{
+        else {
             toast('Error Password not saved');
         }
     }
-    
+
 
     const editPassword = (id) => {
         console.log("Deleting password with id ", id)
