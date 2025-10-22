@@ -6,7 +6,6 @@ It allows users to store, edit, delete, and manage passwords for different websi
 **Features**
 
 - Add new passwords (with site, username, and password fields)
-
 - Edit existing passwords
 - Delete saved passwords
 - Copy password to clipboard
@@ -28,8 +27,3 @@ It allows users to store, edit, delete, and manage passwords for different websi
 - Express.js
 - MongoDB (with MongoClient)
 - dotenv (for environment variables)
-
-
-🔍 Copy & Edit icons for quick management
-
-🎨 Beautiful gradient background with modern UI
